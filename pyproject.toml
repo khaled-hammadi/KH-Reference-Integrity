@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kh-reference-integrity"
+version = "0.1.0"
+description = "Transparent first-pass academic reference-list checks"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Khaled Hammadi"}]
+keywords = ["academic-research", "bibliography", "doi", "arabic", "citations"]
+
+[project.scripts]
+khref = "kh_reference_integrity.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kh_reference_integrity*"]
